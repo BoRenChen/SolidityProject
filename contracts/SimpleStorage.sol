@@ -20,6 +20,10 @@ contract SimpleStorage {
     function store(uint256 _favoriateNumber) public  {
         favoriteNumber = _favoriateNumber;
     }
+    
+    function retrieve() public view returns (uint256){
+        return favoriteNumber;
+    }
 
     //memory - after exe delete 
     //stroage - keep it
@@ -27,5 +31,6 @@ contract SimpleStorage {
         listPeople.push(People(_favNumber, _name));
         nameToFavNumber[_name] = _favNumber;
     }
+
 
 }
