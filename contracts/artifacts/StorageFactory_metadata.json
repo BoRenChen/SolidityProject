@@ -6,10 +6,97 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "createSimpleStorageContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "favoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listPeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -67,6 +154,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favoriateNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -101,11 +201,11 @@
 			]
 		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x56f418bc41c2b8cfc474e8876ca2924139a3f1f6680d25a8f8f89208cbaf5fbe",
+			"keccak256": "0x83bcfbad07d35df15b440fe923f5a56b421f8c2fd89dd5e1d96714560f4dcbb2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e5a3f5a69168c66f8f6997e867854150c661e04ee06e565b227fe195c9fb4c98",
-				"dweb:/ipfs/QmW1aJmh8Vx5M4rBYrCmApe7fYUbBhxQqbrGdJEZMitRsQ"
+				"bzz-raw://302461eab46b730e415ac4596b66bea18f86ae492688d7e9b32cb9df77027b93",
+				"dweb:/ipfs/QmToC9N1RRge66qkg1CkHUJcFR9CtSHrUeBU9evrgEfkUy"
 			]
 		}
 	},
